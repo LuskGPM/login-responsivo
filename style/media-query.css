@@ -1,9 +1,14 @@
 @import url(../style/paleta.css);
 
+@media screen  and (max-width:767px) {
+    body {
+        background-color: var(--cor5);
+}
+}
+
 @media screen and (min-width: 768px) {
 
     body {
-        background-color: none;
         background-image: linear-gradient(to top, var(--cor3), var(--cor2));
     }
 
