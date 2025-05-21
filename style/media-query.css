@@ -66,9 +66,25 @@
         flex-direction: row-reverse;
         width: calc(800px + 10vw);
     }
+
     #formulario p {
         font-size: 1em;
         padding: 30px 0;
     }
 
+}
+
+@media screen and (min-width: 1600px) {
+    main {
+        width: 60vw;
+        height: 600px;
+    }
+
+    #input-login-senha {
+        row-gap: 15px;
+    }
+
+    form input {
+        padding: 20px;
+    }
 }
