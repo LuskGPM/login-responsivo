@@ -63,7 +63,11 @@
 
     main {
         flex-direction: row-reverse;
-        width: calc(750px + 10vw);
+        width: calc(800px + 10vw);
+    }
+    #formulario p {
+        font-size: 1em;
+        padding: 30px 0;
     }
 
 }

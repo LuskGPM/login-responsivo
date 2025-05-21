@@ -95,7 +95,7 @@ form input {
 
 #input-login-senha {
     display: grid;
-    grid-template-columns: repeat(1, 30px 1fr);
+    grid-template-columns: repeat(1, 50px 1fr);
     row-gap: 7px;
 }
 
