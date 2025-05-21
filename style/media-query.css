@@ -1,6 +1,6 @@
 @import url(../style/paleta.css);
 
-@media screen and (min-width: 1058px) {
+@media screen and (min-width: 768px) {
 
     body {
         background-image: linear-gradient(to top, var(--cor3), var(--cor2));
@@ -63,7 +63,7 @@
 
     main {
         flex-direction: row-reverse;
-        width: calc(700px + 3vw);
+        width: calc(750px + 10vw);
     }
 
 }
