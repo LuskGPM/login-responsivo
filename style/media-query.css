@@ -63,8 +63,7 @@
 
     main {
         flex-direction: row-reverse;
-        width: calc(700px + 1vw);
-        max-width: 900px;
+        width: calc(700px + 3vw);
     }
 
 }
