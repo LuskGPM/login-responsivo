@@ -1,9 +1,9 @@
 @import url(../style/paleta.css);
 
-@media screen  and (max-width:767px) {
+@media screen and (max-width:767px) {
     body {
         background-color: var(--cor5);
-}
+    }
 }
 
 @media screen and (min-width: 768px) {
