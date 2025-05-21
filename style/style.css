@@ -5,6 +5,7 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 html,
@@ -22,7 +23,8 @@ body {
 }
 
 main {
-    width: 260px;
+    width: calc(260px + 2vw);
+    max-width: 350px;
     height: 500px;
     display: flex;
     flex-direction: column-reverse;
@@ -36,17 +38,13 @@ main {
     padding: 20px;
     background-color: var(--branco);
     border-radius: 0 0 10px 10px;
+    font-size: 1em;
 }
 
 #formulario h1 {
     text-align: center;
     padding: 10px;
     font-size: 1.5em;
-}
-
-#formulario p {
-    text-align: left;
-    font-size: 1em;
 }
 
 #img {
@@ -114,29 +112,25 @@ form input {
 }
 
 form input[type="submit"] {
-    border: none;
     background-color: var(--cor1);
-    color: var(--branco);
-    padding: 10px;
-    font-size: 1.1em;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 form input[type="submit"]:hover {
     background-color: var(--cor2);
     color: var(--cor3);
-    box-shadow: var(--box-shadow);
-    transform: scale(1.05);
-}
-
-form input[type="submit"]:active {
-    transform: scale(0.95);
 }
 
 form input[type="button"] {
-    border: none;
     background-color: var(--cor4);
+}
+
+form input[type="button"]:hover {
+    background-color: var(--cor5);
+    color: var(--preto);
+}
+
+.botoes input {
+    border: none;
     color: var(--branco);
     padding: 10px;
     font-size: 1.1em;
@@ -144,13 +138,17 @@ form input[type="button"] {
     cursor: pointer;
 }
 
-form input[type="button"]:hover {
-    background-color: var(--cor5);
-    color: var(--preto);
+.botoes input:hover {
     box-shadow: var(--box-shadow);
     transform: scale(1.05);
 }
 
-form input[type="button"]:active {
+.botoes input:active {
     transform: scale(0.95);
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 }

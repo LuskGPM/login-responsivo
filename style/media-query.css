@@ -1,1 +1,70 @@
 @import url(../style/paleta.css);
+
+@media screen and (min-width: 768px) {
+
+    body {
+        background-image: linear-gradient(to top, var(--cor3), var(--cor2));
+    }
+
+    main {
+        flex-direction: row;
+        min-width: 700px;
+        height: 350px;
+        overflow: hidden;
+    }
+
+    #formulario {
+        display: block;
+        width: 60%;
+        font-size: 1.1em;
+    }
+
+    #formulario p {
+        padding: 10px 0;
+    }
+
+    #formulario h1 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    #img {
+        display: block;
+        width: 40%;
+        background-position: center right;
+    }
+
+    #input-login-senha {
+        row-gap: 10px;
+    }
+
+    #input-login-senha input {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .botoes input {
+        width: 50%;
+        font-size: 0.8em;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    main {
+        flex-direction: row-reverse;
+        width: calc(700px + 1vw);
+        max-width: 900px;
+    }
+
+}
